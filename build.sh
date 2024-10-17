@@ -3,6 +3,11 @@
 # Exibir uma mensagem inicial para depuração
 echo "Iniciando o build..."
 
+# Exibir o ambiente para depuração
+echo "Informações do ambiente: "
+echo "Diretório de trabalho: $(pwd)"
+echo "Conteúdo do diretório: $(ls -la)"
+
 # Verificar se o npm está instalado
 if ! command -v npm &> /dev/null
 then
@@ -10,7 +15,7 @@ then
     exit 1
 fi
 
-# Instalar dependências do npm (se necessário)
+# Instalar dependências do npm
 echo "Instalando dependências..."
 npm install
 
