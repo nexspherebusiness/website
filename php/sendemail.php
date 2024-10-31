@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Set the recipient email address
-    $recipient = "info@nexspherebusiness.com"; // Replace with your email
+    $recipient = "info@astrelisbusiness.com"; // Replace with your email
 
     // Create the email subject
     $email_subject = "New contact from $name: $subject";
